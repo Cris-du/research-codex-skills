@@ -1,0 +1,7 @@
+policy:
+  allow_implicit_invocation: false
+
+interface:
+  display_name: "05 · SCI 投稿总控"
+  short_description: "05论文全周期：规划投稿流程并路由到对应稿件或审稿 skill"
+  default_prompt: "使用 $05-sci-publish 检查当前论文的投稿状态并规划下一步。"

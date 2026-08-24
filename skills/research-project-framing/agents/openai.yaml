@@ -1,0 +1,7 @@
+interface:
+  display_name: "01 立项与选题论证"
+  short_description: "显式开启后持续梳理核心问题、立题依据、Novelty 与预期贡献"
+  default_prompt: "使用 $research-project-framing 显式开启当前任务的01立项与选题论证，梳理核心问题、立题依据、Novelty、预期贡献和初步研究构想。"
+
+policy:
+  allow_implicit_invocation: false

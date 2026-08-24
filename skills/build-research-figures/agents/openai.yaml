@@ -1,0 +1,7 @@
+interface:
+  display_name: "科研图版生成"
+  short_description: "按02证据和03单图规划、拼接、微调论文Fig并生成图注"
+  default_prompt: "使用 $build-research-figures 根据项目的02证据和03单图，先规划并确认，再生成正式Fig与图注。"
+
+policy:
+  allow_implicit_invocation: false

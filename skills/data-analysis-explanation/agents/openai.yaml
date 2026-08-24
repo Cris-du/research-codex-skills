@@ -1,0 +1,10 @@
+# Codex UI 元数据与调用策略（仅 Codex 读取；字段见官方 agent skills 文档）
+interface:
+  display_name: "03 · 数据分析 · 解释文件"
+  short_description: "只读核对、授权修复或同步新输出，严格区分检查范围与写入权限。"
+  brand_color: "#2E8B6B"
+  default_prompt: "使用 $data-analysis-explanation 只读检查指定单元与解释体系是否一致，先报告差异，不要自动修改。"
+
+policy:
+# 只接受用户点名或 data-analysis-auto 的明确阶段交接。
+  allow_implicit_invocation: false

@@ -1,0 +1,6 @@
+interface:
+  display_name: "05 · 科研论文写作工作台"
+  short_description: "05论文全周期：持续撰写与改稿，并统一处理图表、引文和参考文献"
+  default_prompt: "使用 $05-sci-manuscript-writing 打开当前科研项目的论文写作工作台。"
+policy:
+  allow_implicit_invocation: false

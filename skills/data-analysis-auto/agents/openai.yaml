@@ -1,0 +1,8 @@
+interface:
+  display_name: "03 · 数据分析 · 全自动"
+  short_description: "任意规模项目分析：解释准入后自动执行，严格一文件一单图。"
+  brand_color: "#2E8B6B"
+  default_prompt: "使用 $data-analysis-auto 完成当前项目的数据分析，先核对输入解释，再自动规划、执行和复现。"
+
+policy:
+  allow_implicit_invocation: true

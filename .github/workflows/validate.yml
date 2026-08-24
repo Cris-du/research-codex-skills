@@ -1,0 +1,43 @@
+name: Validate Skills
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Validate Skill packages
+        run: python scripts/validate_skills.py
+
+      - name: Compile Python sources
+        run: python -m compileall -q skills scripts
+
+      - name: Parse PowerShell templates
+        shell: pwsh
+        run: |
+          Get-ChildItem -LiteralPath skills -Recurse -File -Filter '*.ps1' |
+            ForEach-Object {
+              [scriptblock]::Create(
+                (Get-Content -LiteralPath $_.FullName -Raw)
+              ) | Out-Null
+            }
+
+      - name: Test clean bundle installation
+        shell: bash
+        run: |
+          python scripts/install.py --dest .tmp-skills
+          test "$(find .tmp-skills -name SKILL.md -type f | wc -l)" -eq 13

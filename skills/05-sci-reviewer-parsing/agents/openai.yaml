@@ -1,0 +1,7 @@
+policy:
+  allow_implicit_invocation: false
+
+interface:
+  display_name: "05 · SCI 审稿意见解析"
+  short_description: "05论文全周期：把审稿意见整理为中文分类清单并定位稿件位置"
+  default_prompt: "使用 $05-sci-reviewer-parsing 解析我指定的审稿意见文件。"

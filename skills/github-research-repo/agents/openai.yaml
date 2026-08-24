@@ -1,0 +1,6 @@
+interface:
+  display_name: "GitHub｜科研方法与代码仓库"
+  short_description: "从零创建、接管并安全维护科研方法与代码仓库"
+  default_prompt: "使用 $github-research-repo 从零创建、克隆接管或维护当前项目的 GitHub 方法与代码仓库，先只读判定本地与远端状态。"
+policy:
+  allow_implicit_invocation: false

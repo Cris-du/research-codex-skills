@@ -1,0 +1,6 @@
+interface:
+  display_name: "00科研项目驾驶舱"
+  short_description: "初始化项目、规划并安全复制材料、维护 PROJECT.md"
+  default_prompt: "使用 $manage-research-project 显式开启00科研项目驾驶舱：先只读扫描并在会话中展示计划，得到我明确确认后创建固定骨架、复制选定材料且保持源文件不动，或更新 PROJECT.md。"
+policy:
+  allow_implicit_invocation: false

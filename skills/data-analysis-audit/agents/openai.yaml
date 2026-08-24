@@ -1,0 +1,8 @@
+interface:
+  display_name: "03 · 数据分析 · 分钟语义审计"
+  short_description: "逐分钟只读核对任务说明、规划表与业务源码，只在会话报告。"
+  brand_color: "#2E8B6B"
+  default_prompt: "使用 $data-analysis-audit 逐个审计当前项目的分钟时间戳任务，只读核对任务说明、规划表和业务源码，并在会话中报告。"
+
+policy:
+  allow_implicit_invocation: true

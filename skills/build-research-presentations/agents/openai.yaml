@@ -1,0 +1,4 @@
+interface:
+  display_name: "科研项目汇报"
+  short_description: "从科研项目材料生成组会或全景汇报 PPT，并完成视觉验收"
+  default_prompt: "使用 $build-research-presentations 为当前科研项目制作一份组会增量汇报 PPT。"
